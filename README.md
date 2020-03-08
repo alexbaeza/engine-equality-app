@@ -1,4 +1,9 @@
 # engine-equality-app
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e05b107-264d-4e08-adc6-917b050bbacc/deploy-status)](https://app.netlify.com/sites/upbeat-snyder-704a29/deploys)
+
+Demo: https://engine-equality.netlify.com 
+
+
 This app was developed for "Engine for equal exhibition" an internal company event organised by "Beyond her" to spread a vital message on gender equality.
 These maps include public data available from the Office for National Statistics (ONS) and Ordnance Survey (OS).
 The data visualization uses kepler.gl
