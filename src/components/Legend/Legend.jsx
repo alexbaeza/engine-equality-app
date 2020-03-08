@@ -14,6 +14,7 @@ class Legend extends React.Component {
               <div>
                 <div className="legend--layer sc-bmyXtO dOmEkY">
                   <div className="legend--layer_name">Gender Pay Gap %</div>
+                  <p style={{color: "#fff" }}>Ranges from -4.6% meaning women get paid -4.6% more to 15.1% meaning men get paid 15.1% more</p>
                   <div>
                     <div className="legend--layer_type">Color</div>
                     <div className="legend--layer_color-schema">
