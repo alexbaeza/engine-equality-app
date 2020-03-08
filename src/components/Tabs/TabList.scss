@@ -1,0 +1,126 @@
+.tab-buttons {
+  border-radius: 25px;
+  background-color: #09101D;
+}
+
+button {
+  background-color: #09101D;
+  color: #B0CBD7;
+  padding: 1rem;
+
+}
+
+// Includes
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+// Variables
+$icon_size: 3rem; // 32px @ 16px default rem size
+$icon_color: #ccc;
+$icon_color_hover: #fff;
+$icon_color_checked: #ABDC38;
+
+$max_expansion: 16rem; // 16*16 = 256px => max width of expansion, directly relates to the transition timing length
+$menu_text_size: 1.5rem; // size of the menu text
+$menu_text_color: #fff;
+$menu_bg: #09101D;
+
+$menu_item_padding: 1.5rem;
+$menu_item_bg: none;
+$menu_item_bg_hover: #ffffff;
+$menu_item_bg_checked: #222;
+
+$menu_border_radius: $icon_size/4;
+
+.menu {
+  font-family: arial;
+  background: $menu_bg;
+  display: table;
+  position: relative;
+  margin: 0 $menu_border_radius;
+  box-shadow: 0 $icon_size/1.5 $icon_size*3 rgba(0, 0, 0, 0.8);
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: $menu_border_radius;
+    background: $menu_bg;
+  }
+
+  &:before {
+    left: -$menu_border_radius;
+    border-radius: $menu_border_radius 0 0 $menu_border_radius;
+  }
+
+  &:after {
+    right: -$menu_border_radius;
+    border-radius: 0 $menu_border_radius $menu_border_radius 0;
+  }
+}
+
+.menu_item {
+  display: block;
+  float: left;
+  white-space: nowrap;
+  color: $icon_color;
+  font-size: $menu_text_size;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .button {
+    display: none;
+
+    &:active ~ {
+      background: $menu_item_bg_hover;
+    }
+  }
+
+
+  .tab-button {
+    overflow: hidden;
+    transition: all ease-in-out 233ms;
+    padding: $menu_item_padding;
+
+    &:hover {
+      background: $menu_item_bg_hover;
+    }
+  }
+
+  .menu_icon {
+    display: inline-block;
+    font-size: $icon_size;
+    line-height: $icon_size;
+    vertical-align: middle;
+    width: $icon_size;
+    text-align: center;
+    margin-right: 0.5rem;
+    transition: color ease-in-out 80ms;
+  }
+
+  .menu_text {
+    line-height: $icon_size;
+    color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.menu_title {
+  color: $menu_text_color;
+  font-size: $menu_text_size;
+  display: block;
+  float: left;
+  line-height: $icon_size;
+  padding: $menu_item_padding;
+}
+
+.toggle {
+  background: $menu_bg;
+}
+
+.active {
+  background: $icon_color_hover;
+}
