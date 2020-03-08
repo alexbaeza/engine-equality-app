@@ -66,7 +66,7 @@ class App extends React.Component {
         <footer>
           <p>This app was developed for "Engine for equal exhibition" an internal company event organised by "Beyond her" to spread a vital message on gender equality.</p>
           <p>These maps include data from the Office for National Statistics (ONS) and Ordnance Survey (OS) </p>
-          <p>Author: Alejandro Baeza | Github Repository: </p>
+          <p>Author: Alejandro Baeza</p>
         </footer>
       </div>
     );
