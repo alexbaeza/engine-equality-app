@@ -24,7 +24,7 @@ class TabList extends Component {
   }
 
   componentDidMount() {
-    this.intervalId = setInterval(this.timer.bind(this), 1000);
+    this.intervalId = setInterval(this.timer.bind(this), 3000);
   }
 
   componentWillUnmount() {
